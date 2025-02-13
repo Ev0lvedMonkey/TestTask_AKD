@@ -24,6 +24,7 @@ public class ObjectPicker : MonoBehaviour
         Rigidbody pickedObjectRb = pickedObject.GetComponent<Rigidbody>();
         _pickedObjectRigBody = pickedObjectRb;
         _pickedObjectRigBody.useGravity = false;
+        _pickedObjectRigBody.isKinematic = false;
         _isPicked = true;
     }
 
